@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.tubalayoutController">
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="background" stylesheets="@DarkTheme.css" BorderPane.alignment="CENTER">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" />
+         </children>
+      </StackPane>
+   </center>
+   <bottom>
+      <VBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="50.0" styleClass="background">
+               <children>
+                  <Button fx:id="openfilebtn" mnemonicParsing="false" onAction="#handleButtonAction">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="playbtn" mnemonicParsing="false" onAction="#playVideo" prefHeight="20.0" prefWidth="30.0" styleClass="label-bright">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="stopbtn" mnemonicParsing="false" onAction="#stopVideo" prefHeight="20.0" prefWidth="30.0" styleClass="label-header">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#slowerVideo" text="&lt;&lt;&lt;" visible="false" />
+                  <Button mnemonicParsing="false" onAction="#slowVideo" text="&lt;&lt;" visible="false" />
+                  <Button mnemonicParsing="false" onAction="#fastVideo" text="&gt;&gt;" visible="false" />
+                  <Button mnemonicParsing="false" onAction="#fasterVideo" text="&gt;&gt;&gt;" visible="false" />
+                  <Slider fx:id="volumeSlider">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Slider>
+                  <MenuButton fx:id="settingsmenu" mnemonicParsing="false" popupSide="TOP">
+                     <items>
+                      <MenuItem mnemonicParsing="false" onAction="#slowerVideo" text="0.5" />
+                      <MenuItem mnemonicParsing="false" onAction="#slowVideo" text="0.75" />
+                        <MenuItem mnemonicParsing="false" onAction="#normalVideo" text="1.0" />
+                        <MenuItem mnemonicParsing="false" onAction="#fastVideo" text="1.25" />
+                        <MenuItem mnemonicParsing="false" onAction="#fasterVideo" text="1.5" />
+                        <MenuItem mnemonicParsing="false" onAction="#fastestVideo" text="2.0" />
+                     </items>
+                  </MenuButton>
+               </children>
+            </HBox>
+            <Slider fx:id="seekSlider" styleClass="background" />
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

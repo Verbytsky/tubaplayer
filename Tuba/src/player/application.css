@@ -1,0 +1,65 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.button{
+ -fx-background-color: transparent;
+ }
+
+.menu-button
+{
+    -fx-background-color: transparent;
+    	  
+}
+.menu-button .arrow-button .arrow{
+    -fx-background-color: transparent;
+    	  
+}
+
+.slider .axis .axis-label{
+-fx-fill: red;
+}
+
+#openfilebtn {
+ 
+ -fx-background-image: url("res/open.png");
+ -fx-background-size: 16 16 ;
+ -fx-background-repeat: no-repeat;
+ -fx-background-position: center; 
+}
+
+#playbtn {
+ 
+ -fx-background-image: url("res/play.png");
+ -fx-background-size: 16 16 ;
+ -fx-background-repeat: no-repeat;
+ -fx-background-position: center; 
+}
+
+#pausebtn {
+ 
+ -fx-background-image: url("res/pause.png");
+ -fx-background-size: 16 16 ;
+ -fx-background-repeat: no-repeat;
+ -fx-background-position: center; 
+}
+
+#stopbtn {
+ 
+ -fx-background-image: url('res/stop.png');
+ -fx-background-size: 16 16;
+ -fx-background-repeat: no-repeat;
+ -fx-background-position: center; 
+
+}
+
+
+#settingsmenu {
+	-fx-background-image: url("res/settings.png");
+   -fx-background-size: 16 16 ;
+ -fx-background-repeat: no-repeat;
+ -fx-background-position: center; 
+ -fx-background-color: #74c540;
+
+ 
+}
+
+
+
